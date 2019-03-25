@@ -4,6 +4,8 @@ html, body {
   margin: 0;
   margin-top: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 
   font-family: sans-serif;
   width: 100vw;
@@ -18,7 +20,7 @@ nav {
 
   width: 200px;
   height: 100vh;
-  margin-left: 0;
+  left: 0;
 
   transition: all 1s ease;
 
@@ -32,6 +34,7 @@ li {
   margin-left: -20px;
 
   font-size: 19px;
+  position: relative;
 }
 li + li {
   margin-top: 10px;
@@ -61,17 +64,16 @@ a {
 
   display: table;
 
-  margin: 70px auto;
-  padding: 5px 30px;
+  margin: 70px auto;
 
-  border: 3px solid lightblue;
-  background-color: lightblue;
+  padding: 5px 30px;
+  opacity: 0.5;
   width: 100px;
 
   font-size: 32px;
 }
 a:hover {
-  border: 3px solid blue;
+  opacity: 1;
   cursor: pointer;
 }
 textarea {
@@ -83,18 +85,30 @@ textarea {
   margin-top: -30px;
 
   font-size: 14px;
+  opacity: 0.5;
 }
-section {
+
+select {
+  width: 168px;
+  opacity: 0.5;
+  height: 27px;
+  font-size: 14px;
+}
+
+/* section {
   position: absolute;
   bottom: -0;
   right: 0;
   height: 194px;
-    width: 743px;
+  width: 743px;
   background-color: rgba(255, 255, 255, 0.7);
-}
+} */
 h1 {
   font-size: 71px;
-  margin-top: -7px;
+  top: 40vh;
+  left: auto;
+  margin: 0;
+  position: absolute;
 }
 @keyframes spin { 100% {transform:rotate(360deg);} }
 
